@@ -1,10 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
+	  <PackageId>WpfPluginKit</PackageId>
+	  <Version>1.0.0</Version>
+	  <Authors>RedSoundwave</Authors>
+	  <Description>This template provides a structured approach for developing WPF plugins that include UI elements such as pages, windows, resources, and assets. The template ensures consistency across plugins and seamless integration with the main UI application.</Description>
+	  <PackageTags>wpf, template</PackageTags>
+	  <RepositoryUrl>https://github.com/RedSoundwave/WpfPluginKit</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,7 +32,8 @@
 		<Folder Include="Models\" />
 		<Folder Include="Services\" />
 		<Folder Include="Utility\" />
-		<Folder Include="ViewModels\" />
+		<Folder Include="ViewModels\Windows\" />
+		<Folder Include="ViewModels\Pages\" />
 		<Folder Include="Views\" />
 		<Folder Include="Views\Windows\" />
 		<Folder Include="Views\Pages\" />

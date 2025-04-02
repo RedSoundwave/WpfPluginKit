@@ -1,0 +1,11 @@
+{
+    "author": "RedSoundwave",
+    "classifications": [ "WPF", "Template" ],
+    "identity": "com.redsoundwave.wpfpluginkit",
+    "name": "Custom WPF Plugin Class Library Template",
+    "shortName": "WpfPluginKit",
+    "tags": [ "wpf", "plugin", "template" ],
+    "description": "This template is a structured approach to create WPF-based plugin class libraries.",
+    "templateSource": "./" 
+  }
+  
