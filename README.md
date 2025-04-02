@@ -32,22 +32,25 @@ This template provides a structured approach for developing WPF plugins that inc
 Each plugin should maintain the following structure:
 ```
 PluginName/
-├── Assets/          # Stores images, icons, and other media resources.
-├── Converters/      # Contains value converters for data binding.
-├── Extensions/      # Stores extension methods for common functionalities.
-├── Utility/         # Contains helper and utility classes.
-├── ViewModels/      # Implements the MVVM pattern's ViewModel layer.
-├── Views/           # Contains UI components such as pages and windows.
-│   ├── Windows/     # Stores plugin-specific window components.
-│   ├── Pages/       # Stores plugin-specific page components.
-├── Resources/       # Contains XAML resource dictionaries and styles.
-├── Services/        # Manages data access, business logic, and plugin interactions.
-├── Models/          # Stores plugin-specific data models (if not in Shared project).
-├── Commands/        # Implements custom ICommand logic for MVVM.
-├── Behaviors/       # Contains attached behaviors for extended control functionality.
-├── Interfaces/      # Defines common contracts for dependency injection and interaction.
-├── Helpers/         # Utility classes for themes, serialization, etc.
-├── Localization/    # Stores language resource files for multi-language support.
+├── Assets/          # Stores media resources such as images, icons, sounds, and other visual or multimedia assets used by the plugin.
+├── Converters/      # Contains value converters that are used to transform data during binding in XAML.
+├── Extensions/      # Includes extension methods for commonly used functionalities or added features.
+├── Utility/         # Contains general-purpose utility classes that support common operations across the plugin.
+├── ViewModels/      # Implements the MVVM pattern’s ViewModel layer, which handles the logic and state of the UI.
+│   ├── Windows/     # Stores ViewModels for plugin-specific window components.
+│   ├── Pages/       # Stores ViewModels for plugin-specific page components.
+├── Views/           # Contains UI elements, such as pages and windows, which make up the user interface of the plugin.
+│   ├── Windows/     # Stores UI components for plugin-specific window views.
+│   ├── Pages/       # Stores UI components for plugin-specific page views.
+├── Resources/       # Contains shared XAML resource dictionaries, styles, and themes used across the plugin.
+├── Services/        # Manages data access, business logic, and interactions with external services (e.g., APIs, databases).
+├── Models/          # Defines data models specific to the plugin, or may use shared models from the Shared project.
+├── Commands/        # Contains implementations of custom `ICommand` logic for use with MVVM, such as button clicks or other user actions.
+├── Behaviors/       # Includes custom attached behaviors that enhance the functionality of existing controls.
+├── Interfaces/      # Defines common contracts and interfaces, which may be used for dependency injection or for plugin interactions.
+├── Helpers/         # Utility classes and methods for tasks such as theme management, serialization, file handling, etc.
+├── Localization/    # Stores localization resources and language files to support multi-language plugins.
+
 ```
 
 ### 6. Plugin Loading & Registration
